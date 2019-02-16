@@ -1,0 +1,41 @@
+header{
+    background: rgb(44, 64, 131);
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    /* border: 1px solid white; */
+    width: 1136px;
+    padding-top: 12px;
+    text-align: end;
+}
+.login{
+    /* border: 1px solid white; */
+     padding: 10px;
+     margin: 25px 30px 25px 25px;
+    font-size: 25px;
+}
+nav{
+    border: 1px solid black;
+    
+}
+.menu{
+    border: 1px solid red;;
+     margin: 30px;  
+     padding: 10px; 
+     display: flex;
+     justify-content: center;
+
+}
+.menu_caracteristica{
+    border: 1px solid black;
+    border-radius: 10px;
+    /* display: inline-block; */
+    width: 202px;
+    height: 50px;
+    text-align: center;
+    padding-top:24px;
+    margin: 0 10px 0 10px;
+    
+}
