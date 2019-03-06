@@ -1,154 +1,122 @@
 /* fuentes
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Merriweather Sans', sans-serif;
-
+colores: #777 ESTE ES GRIS 
 
 */
 
-:root{
-    --font-sans : 'PT Sans Narrow', sans-serif;
-    --font-Merriweather : 'Merriweather Sans', sans-serif;
-    --color-white:#F7F7F7;
-    --color-blue-soft: rgb(44, 64, 131);
-    --color-blue-strong:#0B2C62;
-    --color-gray:#45536D;
-    --color-blue-gray:#344462;
-    --color-black:black;
 
+:root{
+    --color-white:#F7F7F7;
+    --color-gray: #777;
+    --color-black:black;
+    --color-blue:#3c8dbc;
+    --color-green:#00a65a;
     --space: 10px;
     --border: 1px solid black;
+    --font:'Source Sans Pro','Helvetica Neue','Helvetica','Arial','sans-serif';
 }
- /* home */
-header{ 
-    background:var(--color-blue-soft);
+/*--------------- aca comienza el login------------------------- */
+header{
     display: flex;
-    justify-content: space-between;
-    font-family: var(--font-Merriweather);
-    color: var(--color-white);
-    align-content: center;
+    justify-content: flex-end;
 }
-
-.title{
-    /* border: 1px solid white; */
-    margin-left: var(--space);
+.registro{
+    margin-top: 10px;
+    margin-right: 20px;
     text-align: center;
-}
-.login{
-    /* border: 1px solid white; */
-    margin-right: var(--space);
-    margin: 25px 30px 25px 25px;
-    font-weight: 500;
-    font-size: 30px;
-}
-.login:hover{
-    color: var(--color-black);
-    cursor: pointer;
-}
-.content{
-    background-image: url("../css/img.jpg");
-    width: 99.8%;
-    height:100vh ;
-    background-size: cover;
-}
-nav{
-    border:var(--border); 
-    height:100vh ;
-}
-.menu{
-    /* border: 1px solid red;; */
-     margin: 200px;  
-     padding: var(--space); 
-     display: flex;
-     justify-content:center;
-     align-content: center;
-
-}
-.menu_caracteristica{
-    border: var(--border);
-    border-radius: var(--space);
-    /* display: inline-block; */
-    width: 202px;
-    height: 50px;
-    text-align: center;
-    padding-top:24px;
-    margin: 0 10px 0 10px;
-    background-color: var(--color-blue-soft);
-    color: var(--color-white);
-}
-.menu_caracteristica a{
-    color: var(--color-white);
-    text-decoration: none;
-     padding: 20px 25px 20px 25px;
-}
-.menu_caracteristica:hover{
-background: var(--color-blue-strong);
-cursor: pointer;
-}
-
-
-
-/* -----VENTAS,Menú de Navegación */
-
-
-
-
-
-.navigation_menu{
-    width: 300px;
-    height: 600px;
-    margin: var(--space);
-    background-color: var(--color-blue-soft);
-    border-radius: var(--space);
-    border:0px;
-}
-.avatar{
-    /* border: var(--border); */
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-.avartar_1{
-    background-image: url("../images/p3.png");
-    background-size: cover;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: var(--space);
-    display: flex;
-    justify-content: space-between; 
-}
- h3 {
-  margin: auto;
-  color: var(--color-white)
-
-}
-.product_section{
-    display: block;
-    margin: var(--space)
-}
-.section{
-    border: var(--border);
-    height: 40px;
-    width: 250px;
-    margin-top:10px;
-    margin: auto;
-    border-radius: var(--space);
-    color: var(--color-white);
-    text-align: center;
-    font-size: 20px;
-    padding-top: 15px;
+    border-radius: 5px;
     
 }
-.section a{
-    color: var(--color-white);
+.registro a{
     text-decoration: none;
+    color: var(--color-black);
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 400;
 }
-.section:hover{
-    background: var(--color-blue-strong);
-    cursor: pointer;
-    }
+.registro a:hover{
+    font-weight: 900;
+}
+.container_login{
+    width: 500px;
+    height: 360px;
+    margin: 7% auto;
+    
+}
+.name{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-family: var(--font);
+}
+.contenido{
+    width: 500px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+
+}
+.contenido > p{
+    text-align: center;
+    color: var(--color-gray);
+    font-family: var(--font);
+    font-size: 20px;
+    display: block;
+    padding-top: 26px;
+
+}
+.input{
+    border: 1px solid var(--color-gray);
+    width: 90%;
+    height: 30px;
+    margin:10px 4% 10px 4%;
+    margin-top: var(--space);
+    border-radius: 5px;
+    padding: 3px;
+}
+.input:hover{
+    border:1px solid var(--color-blue);
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+.submit{
+    background-color: var(--color-blue);
+    border: var(--color-blue);
+    width: 100px;
+    height: 50px;
+    color: var(--color-white);
+    font-family: var(--font);
+    margin:5% 4% 40px 0;
+    border-radius: 5px;
+}
+/* termina el login */
+
+/* registro*/
+.container_registro{
+    width: 500px;
+    height: 360px;
+    margin: 7% auto;
+}
+/* /registro*/
 
 
-/* section de tabla */
+/* ------------------------comienza el index, la pagina principal------------------------------- */
+
+
+.row{
+    background-color: var(--color-green);
+    color: var(--color-white);
+  
+}
+.row h3{
+    font-family: var(--font);
+    margin: var(--space);
+}
+
+.img_user{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: red;
+}
