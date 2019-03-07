@@ -1,122 +1,163 @@
-/* fuentes
-colores: #777 ESTE ES GRIS 
-
-*/
-
-
-:root{
-    --color-white:#F7F7F7;
-    --color-gray: #777;
-    --color-black:black;
-    --color-blue:#3c8dbc;
-    --color-green:#00a65a;
-    --space: 10px;
-    --border: 1px solid black;
-    --font:'Source Sans Pro','Helvetica Neue','Helvetica','Arial','sans-serif';
+:root {
+  --color-white: #f7f7f7;
+  --color-gray: #777;
+  --color-black: black;
+  --color-blue: #3c8dbc;
+  --color-green: #158654;
+  --color-green-2: #00a65a;
+  --color-gray-2: #333;
+  --color-gray-3: #1a2226;
+  --space: 10px;
+  --border: 1px solid black;
+  --font: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
+    "sans-serif";
 }
-/*--------------- aca comienza el login------------------------- */
-header{
+
+/* menu */
+
+.container_nav .menu {
+  width: 300px;
+  height: 900px;
+  background: var(--color-gray-2);
+  float: left;
+ 
+}
+.title {
+  height: 60px;
+  background: var(--color-green);
+  display: flex;
+  justify-content: center;
+
+}
+.title a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font);
+  font-size: 25px;
+  text-align: center;
+  margin-top: 11.3px;
+}
+.profile_nav{
+    /* border:1px solid var(--color-white); */
     display: flex;
-    justify-content: flex-end;
 }
-.registro{
-    margin-top: 10px;
-    margin-right: 20px;
-    text-align: center;
-    border-radius: 5px;
+.profile_user_nav{
     
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 10px 15px 10px 15px;
+    background-image: url("../css/img.jpg");
+    background-size: cover;
 }
-.registro a{
-    text-decoration: none;
-    color: var(--color-black);
+.name_nav p{
+    /* border:1px solid var(--color-white); */
+    align-items: center;
+    margin:18px 0 5px 10px; 
+    color: var(--color-white);
     font-family: var(--font);
     font-size: 20px;
-    font-weight: 400;
 }
-.registro a:hover{
-    font-weight: 900;
+.space {
+    height: 50px;
+    background-color: var(--color-gray-3);
+    color: #4b646f;
+    font-size: 15px;
+    padding-top: 12px;
+    padding-left: 10px;
 }
-.container_login{
-    width: 500px;
-    height: 360px;
-    margin: 7% auto;
-    
+/* /menu */
+#menu ul li {
+    background-color:#030b16;
+}
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+  text-transform:uppercase;
+}
+
+#menu ul li {
+    position:relative;
+    margin:0;
+    padding:0;
+}
+
+#menu ul li:hover {
+    background:#5b78a7;
+    display: block;
+}
+
+#menu ul ul {
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+}
+
+#menu ul ul li {
+    width:150px
+}
+
+#menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+
+#menu ul li:hover > ul {
+    display:block;
+}
+
+/* header */
+header {
+  height: 60px;
+  background: var(--color-green-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box{
+    width: 20px;
+    height: 20px;
+    border:1px solid var(--color-white);
+    margin-left: 10px;
+}
+.profile_user{
+    width: 200px;
+    height: 40px;
+    /* border:1px solid var(--color-white); */
+    margin-right: 10px;
+    display: flex;
+}
+
+.container_user :hover {
+    background-color: var(--color-green);
+}
+.profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border:1px solid var(--color-white); */
+    background-image: url("../css/img.jpg");
+    background-size: cover;
 }
 .name{
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 25px;
-    font-weight: 300;
-    font-family: var(--font);
-}
-.contenido{
-    width: 500px;
-    background-color: var(--color-white);
-    border-radius: 5px;
-
-}
-.contenido > p{
-    text-align: center;
-    color: var(--color-gray);
-    font-family: var(--font);
-    font-size: 20px;
-    display: block;
-    padding-top: 26px;
-
-}
-.input{
-    border: 1px solid var(--color-gray);
-    width: 90%;
-    height: 30px;
-    margin:10px 4% 10px 4%;
-    margin-top: var(--space);
-    border-radius: 5px;
-    padding: 3px;
-}
-.input:hover{
-    border:1px solid var(--color-blue);
-}
-.button{
-    display: flex;
-    justify-content: flex-end;
-}
-.submit{
-    background-color: var(--color-blue);
-    border: var(--color-blue);
-    width: 100px;
-    height: 50px;
+    /* border:1px solid var(--color-white); */
+    align-items: center;
+    margin:5px 0 5px 10px; 
     color: var(--color-white);
     font-family: var(--font);
-    margin:5% 4% 40px 0;
-    border-radius: 5px;
-}
-/* termina el login */
-
-/* registro*/
-.container_registro{
-    width: 500px;
-    height: 360px;
-    margin: 7% auto;
-}
-/* /registro*/
-
-
-/* ------------------------comienza el index, la pagina principal------------------------------- */
-
-
-.row{
-    background-color: var(--color-green);
-    color: var(--color-white);
-  
-}
-.row h3{
-    font-family: var(--font);
-    margin: var(--space);
+    font-size: 15px;
 }
 
-.img_user{
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    background: red;
-}
+/* /header */

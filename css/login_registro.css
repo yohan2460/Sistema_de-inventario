@@ -1,0 +1,120 @@
+/* fuentes
+colores: #777 ESTE ES GRIS 
+
+*/
+:root{
+    --color-white:#F7F7F7;
+    --color-gray: #777;
+    --color-black:black;
+    --color-blue:#3c8dbc;
+    --color-green:#00a65a;
+    --space: 10px;
+    --border: 1px solid black;
+    --font:'Source Sans Pro','Helvetica Neue','Helvetica','Arial','sans-serif';
+}
+/*--------------- aca comienza el login------------------------- */
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+.registro{
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.registro a{
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 400;
+}
+.registro a:hover{
+    font-weight: 900;
+}
+.container_login{
+    width: 500px;
+    height: 360px;
+    margin: 7% auto;
+    
+}
+.name{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-family: var(--font);
+}
+.contenido{
+    width: 500px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+
+}
+.contenido > p{
+    text-align: center;
+    color: var(--color-gray);
+    font-family: var(--font);
+    font-size: 20px;
+    display: block;
+    padding-top: 26px;
+
+}
+.input{
+    border: 1px solid var(--color-gray);
+    width: 90%;
+    height: 30px;
+    margin:10px 4% 10px 4%;
+    margin-top: var(--space);
+    border-radius: 5px;
+    padding: 3px;
+}
+.input:hover{
+    border:1px solid var(--color-blue);
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+.submit{
+    background-color: var(--color-blue);
+    border: var(--color-blue);
+    width: 100px;
+    height: 50px;
+    color: var(--color-white);
+    font-family: var(--font);
+    margin:5% 4% 40px 0;
+    border-radius: 5px;
+}
+/* termina el login */
+
+/* registro*/
+.container_registro{
+    width: 500px;
+    height: 360px;
+    margin: 7% auto;
+}
+/* /registro*/
+
+
+/* ------------------------comienza el index, la pagina principal------------------------------- */
+
+
+.row{
+    background-color: var(--color-green);
+    color: var(--color-white);
+  
+}
+.row h3{
+    font-family: var(--font);
+    margin: var(--space);
+}
+
+.img_user{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: red;
+}
