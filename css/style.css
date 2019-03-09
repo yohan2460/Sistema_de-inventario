@@ -15,7 +15,62 @@
     "sans-serif";
 }
 
+
+/* header */
+header {
+  height: 60px;
+  background: var(--color-green-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box{
+   width: 300px;
+   height: 60px;
+}
+.profile_user{
+    width: 200px;
+    height: 40px;
+    /* border:1px solid var(--color-white); */
+    margin-right: 10px;
+    display: flex;
+}
+
+.container_user :hover {
+    background-color: var(--color-green);
+    
+}
+.profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border:1px solid var(--color-white); */
+    background-image: url("../css/img.jpg");
+    background-size: cover;
+}
+.name{
+    /* border:1px solid var(--color-white); */
+    align-items: center;
+    margin:5px 0 5px 10px; 
+    color: var(--color-white);
+    font-family: var(--font);
+    font-size: 15px;
+}
+
+/* /header */
+
+/* contenedor de menu y una seccion*/
+
+.container_nav{
+  display: flex;
+}
+/* contenedor de menu y una seccion*/
+
+
+
+
 /* menu */
+
 
 .container_nav .menu {
   width: 300px;
@@ -318,47 +373,37 @@ ul li {
   font-size: 17px;
 }
 
-/* header */
-header {
-  height: 60px;
-  background: var(--color-green-2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.box{
-    width: 20px;
-    height: 20px;
-    border:1px solid var(--color-white);
-    margin-left: 10px;
-}
-.profile_user{
-    width: 200px;
-    height: 40px;
-    /* border:1px solid var(--color-white); */
-    margin-right: 10px;
-    display: flex;
-}
 
-.container_user :hover {
-    background-color: var(--color-green);
-    
-}
-.profile{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    /* border:1px solid var(--color-white); */
-    background-image: url("../css/img.jpg");
-    background-size: cover;
-}
-.name{
-    /* border:1px solid var(--color-white); */
-    align-items: center;
-    margin:5px 0 5px 10px; 
-    color: var(--color-white);
-    font-family: var(--font);
-    font-size: 15px;
-}
 
-/* /header */
+/* contenedor de secciones */
+.container_sections{
+    height: 900px;
+    width: 100%;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+  
+
+
+/* /contenedor de secciones */
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /graficas de inicio */
