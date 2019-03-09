@@ -5,7 +5,9 @@
   --color-blue: #3c8dbc;
   --color-green: #158654;
   --color-green-2: #00a65a;
-  --color-gray-2: #333;
+  --color-gray-2: #222d32;
+  --color-gray-hover: #1e282c;
+  --color-gray-icons: #b8c7ce;
   --color-gray-3: #1a2226;
   --space: 10px;
   --border: 1px solid black;
@@ -42,7 +44,6 @@
     display: flex;
 }
 .profile_user_nav{
-    
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -51,8 +52,7 @@
     background-size: cover;
 }
 .name_nav p{
-    /* border:1px solid var(--color-white); */
-    align-items: center;
+     align-items: center;
     margin:18px 0 5px 10px; 
     color: var(--color-white);
     font-family: var(--font);
@@ -67,55 +67,255 @@
     padding-left: 10px;
 }
 /* /menu */
-#menu ul li {
-    background-color:#030b16;
+
+ul li {
+  list-style: none;
+}
+#accordian a{
+  text-decoration: none;
+}
+#accordian li{
+  list-style: none;
+  color: var(--color-white);
+}
+#accordian h3{
+  /* border:1px solid var(--color-white); */
+  font-size: 14px;
+  width: 300px;
+  height: 50px;
+  background: var(--color-gray-2);
+  position: relative;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font);
+ color: var(--color-gray-icons);
+ cursor: pointer;
+ margin: 0%;
+}
+#accordian .inicio  :hover {
+  color: var(--color-white);
+}
+#accordian :hover .inicio {
+  background-color: var(--color-gray-hover);
+  color: var(--color-white);
+}
+#accordian :hover  .inicio .l{
+  background-color:var(--color-green);
+}
+.l{
+  width: 6px;
+  height: 48px;
+  background-color: var(--color-gray-2);
+  float: left;
+  margin-right: var(--space);
 }
 
-#menu ul {
-    list-style:none;
-    margin:0;
-    padding:0;
+.fa-home{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+
+}
+#accordian :hover  .inicio .fa-home{
+  color:var(--color-white);
 }
 
-#menu ul a {
-    display:block;
-    color:#fff;
-    text-decoration:none;
-    font-weight:400;
-    font-size:15px;
-    padding:10px;
-  text-transform:uppercase;
+/* compra */
+
+ .compras_fa {
+  /* border: 1px solid var(--color-white); */
+  width: 15px;
+  margin-left: -15px;;
+  position: relative;
+  left: 162px;
+  font-size: 22px;
+}
+.fa-truck{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+#accordian :hover  .compras .fa-truck{
+  color:var(--color-white);
+}
+#accordian :hover  .compras .l{
+  background-color:var(--color-green);
+}
+#accordian :hover .compras {
+  background-color: var(--color-gray-hover);
+  color: var(--color-white);
+}
+.compras_ul a{
+  color: var(--color-white);
+  display: block;
+  height: 50px;
+  font-family: var(--font);
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+
 }
 
-#menu ul li {
-    position:relative;
-    margin:0;
-    padding:0;
+.fa-shopping-cart{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+.fa-cash-register{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+.compras_ul :hover .fa-shopping-cart {
+  color: var(--color-white);
+  font-size: 17px;
+}
+.compras_ul :hover .fa-cash-register {
+  color: var(--color-white);
+  font-size: 17px;
+}
+/* productos */
+
+.fa-tasks{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+#accordian :hover  .productos .fa-tasks{
+  color:var(--color-white);
+}
+#accordian :hover  .productos .l{
+  background-color:var(--color-green);
+}
+#accordian :hover .productos {
+  background-color: var(--color-gray-hover);
+  color: var(--color-white);
+}
+/* contactos */
+#accordian :hover  .contactos .fa-user{
+  color:var(--color-white);
+}
+.contactos_fa{
+  /* border: 1px solid var(--color-white); */
+  width: 15px;
+  margin-left: -15px;
+  position: relative;
+  left: 156px;
+  font-size: 22px;
+}
+.fa-user{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+#accordian :hover  .contactos .fa-tasks{
+  color:var(--color-white);
+}
+#accordian :hover  .contactos .l{
+  background-color:var(--color-green);
+}
+#accordian :hover .contactos {
+  background-color: var(--color-gray-hover);
+  color: var(--color-white);
+}
+.fa-users{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+.fa-briefcase{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+.compras_ul :hover .fa-users {
+  color: var(--color-white);
+  font-size: 17px;
+}
+.compras_ul :hover .fa-briefcase {
+  color: var(--color-white);
+  font-size: 17px;
 }
 
-#menu ul li:hover {
-    background:#5b78a7;
-    display: block;
+/* reportes */
+#accordian :hover  .contactos .fa-chart-bar{
+  color:var(--color-white);
+}
+.fa-chart-bar{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+.fa-chart-line{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+.compras_ul :hover .fa-chart-line {
+  color: var(--color-white);
+  font-size: 17px;
+}
+.fa-chart-pie{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
 }
 
-#menu ul ul {
-    position:absolute;
-    top:100%;
-    left:0;
-    padding:0;
+/* facturacion */
+
+#accordian :hover  .contactos .fa-dollar-sign{
+  color:var(--color-white);
+}
+.fa-dollar-sign{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+.facturacion_fa{
+  /* border: 1px solid var(--color-white); */
+    width: 15px;
+    margin-left: -15px;
+    position: relative;
+    left: 146px;
+    font-size: 22px;
 }
 
-#menu ul ul li {
-    width:150px
-}
 
-#menu ul ul a {
-    line-height:120%;
-    padding:10px 15px;
+.compras_ul :hover .fa-chart-pie {
+  color: var(--color-white);
+  font-size: 17px;
 }
-
-#menu ul li:hover > ul {
-    display:block;
+/* reportes */
+.reportes_fa{
+  /* border: 1px solid var(--color-white); */
+    width: 15px;
+    margin-left: -15px;
+    position: relative;
+    left: 162px;
+    font-size: 22px;
+}
+.fa-list-alt{
+  width: 50px;
+  text-align: center;
+  color:var(--color-gray-icons); 
+  font-size: 15px;
+}
+.compras_ul :hover .fa-list-alt {
+  color: var(--color-white);
+  font-size: 17px;
 }
 
 /* header */
@@ -142,6 +342,7 @@ header {
 
 .container_user :hover {
     background-color: var(--color-green);
+    
 }
 .profile{
     height: 40px;
