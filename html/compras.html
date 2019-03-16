@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../css/nueva_compras.css">
     <title>MUEBLERIA MODERNA</title>
   </head>
   <body>
@@ -66,18 +66,18 @@
               <div id="accordian">
                   <ul>
                       <li>
-                       <a href="index.html"> <h3 class="inicio" > <div class="l"></div><i class="fas fa-home"></i>Inicio</h3></a>
+                        <a href="index.html"><h3 class="inicio" > <div class="l"></div><i class="fas fa-home"></i>Inicio</h3></a> 
                       </li>
                    
                       <li class="active">
                         <h3 class="compras"> <div class="l"></div> <span class="fa fa-truck"></span>Compras <div class="compras_fa"><i class="fa fa-angle-left "></i></div></h3>
                         <ul>
-                          <li><div class="compras_ul">     <a href="compras.html"> <i class="fas fa-shopping-cart"></i> Nueva Compra</a></div></li>
+                          <li><div class="compras_ul">     <a href="#"> <i class="fas fa-shopping-cart"></i> Nueva Compra</a></div></li>
                           <li> <div class="compras_ul"><a href="#"> <i class="fas fa-cash-register"></i>Historial de Compra</a></div></li>
                         </ul>
                       </li>
                     <li>
-                      <a href="#"> <h3 class="productos"> <div class="l"></div> <i class="fas fa-tasks"></i>Productos</h3></a>
+                      <a href="compras.html"> <h3 class="productos"> <div class="l"></div> <i class="fas fa-tasks"></i>Productos</h3></a>
                     </li>
                     <li>
                       <h3 class="contactos"><div class="l"> </div> <i class="fas fa-user"></i> Contactos <div class="contactos_fa"> <i class="fa fa-angle-left"></i></div></h3>
@@ -111,7 +111,38 @@
          
          <!-- section de grafica de inicio -->
          <section class="container_sections">
-                   
+                    <div class="title_compra">
+                         <p>
+                             <span class="">
+                                    <i class="fa fa-edit"></i> <p class="texto">Agregar Nueva Compra</p>
+                             </span>
+                         </p>
+                    </div>
+                    <div class="container_compra">
+                        <div class="title_registro">
+                         <p class="pi">Nueva Compra</p>
+                        </div>
+                        <div class="detalles_compra">
+                           <p class="pi">Detalles de Compra</p>
+                           <div class="datos_compra">
+                               <div class="block">
+                                   <P>Provedores :</P>
+                               </div>
+                              <div class="buscar">
+                                  Buscar Proveedor
+                              </div>
+                                 <div class="nuevo">
+                                      
+                                        <article>
+                                          <button id="btn-abrir-popup" class="btn-abrir-popup login ">
+                                                <i class="fa fa-plus"></i>Nuevo
+                                          </button>
+                                        </article>
+                                 </div>
+                                 <div class="calendario" ></div>
+                           </div>
+                        </div>
+                    </div>
           </section>
 
          <!-- /section de grafica de inicio -->

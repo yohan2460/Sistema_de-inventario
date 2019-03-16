@@ -1,0 +1,260 @@
+:root {
+    --color-white: #f7f7f7;
+    --color-gray: #777;
+    --color-black: black;
+    --color-blue: #3c8dbc;
+    --color-green: #158654;
+    --color-green-2: #00a65a;
+    --color-gray-2: #222d32;
+    --color-gray-hover: #1e282c;
+    --color-gray-icons: #b8c7ce;
+    --color-gray-3: #1a2226;
+    --color-gray-body: #ecf0f5;
+    --space-10: 10px;
+    --space-15:15px;
+    --font-size:15px;
+    --border: 1px solid red;
+    --font: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
+      "sans-serif";
+  }
+body{
+    background-color: var(--color-gray-body);
+}
+.title_compra{
+    padding: 0px;
+    height: 50px;
+    /* border: var(--border); */
+    display: flex;
+    align-items: center;
+}
+
+.texto{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 24px;
+    position: relative;
+    top: 9px;
+    margin-right: 10px;
+}
+.fa-edit {
+    color: #333333;
+    font-size: 25px;
+     font-weight: 100;
+     margin: 20px;
+     position: relative;
+     left: 12px;
+     top: 6px;
+}
+.container_compra{
+    height: 400px;
+    margin: var(--space-15);
+    background-color: white;
+    border-top: 3px solid #d2d6de;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.title_registro{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    height: 50px;
+    display: flex;
+    align-items: center;
+   
+}
+.title_registro .pi{
+  font-size: 17px;
+  position: relative;
+  top: 8px;
+  margin-left: 10px;
+}
+.detalles_compra{
+  height: 150px;
+  border-top: 3px solid #00c0ef;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  margin: 15px;
+}
+.detalles_compra .pi{
+    font-size: 17px;
+    padding: 12px;
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+   
+
+}
+.datos_compra{
+    height: 70px;
+      border: var(--border);
+  display: block;
+  padding-left: 20px;
+  background-color: #00a65a;
+  display: flex;
+}
+
+.buscar{
+    width: 359px;
+    height: 30px;
+    border: 1px solid #d2d6de;
+    /* position: relative;
+    top: -15px; */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+}
+.datos_compra p{
+    font-weight: bold;
+}
+.block{
+    display: block;
+    background: red;
+    height: 20px;
+}
+.nuevo{
+    /* position: absolute;
+    width: 60px;
+    top: 288px; */
+    right: 754px;
+    height: 30px;
+    border: 1px solid #d2d6de;
+    background-color: #e7e7e7;
+    font-family: var(--font);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.fa-plus{
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+.calendario{
+    width: 359px;
+    height: 30px;
+    border: 1px solid #d2d6de;
+    
+}
+.popup {
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+  
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  
+  .popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: 0.3s ease all;
+    color: #bbbbbb;
+  }
+  
+  .popup .btn-cerrar-popup:hover {
+    color: #572364;
+  }
+  
+  .popup h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+  }
+  
+  .popup h4 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0;
+  }
+  
+  .popup form .contenedor-inputs {
+    opacity: 0;
+  }
+  
+  .popup form .contenedor-inputs input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 52px;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+  }
+  
+  .popup form .btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #5e7de3;
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+  }
+  
+  .popup form .btn-submit:hover {
+    background: rgba(94, 125, 227, 0.9);
+  }
+  
+  /* ------------------------- */
+  /* ANIMACIONES */
+  /* ------------------------- */
+  .popup.active {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .popup.active h3 {
+    animation: entradaTitulo 0.8s ease 0.5s forwards;
+  }
+  .popup.active h4 {
+    animation: entradaSubtitulo 0.8s ease 0.5s forwards;
+  }
+  .popup.active .contenedor-inputs {
+    animation: entradaInputs 1s linear 1s forwards;
+  }
+  
+  @keyframes entradaTitulo {
+    from {
+      opacity: 0;
+      transform: translateY(-25px);
+    }
+  
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes entradaSubtitulo {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+  
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes entradaInputs {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

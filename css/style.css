@@ -9,7 +9,9 @@
   --color-gray-hover: #1e282c;
   --color-gray-icons: #b8c7ce;
   --color-gray-3: #1a2226;
-  --space: 10px;
+  --space-10: 10px;
+  --space-15:15px;
+  --font-size:15px;
   --border: 1px solid black;
   --font: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
     "sans-serif";
@@ -32,7 +34,7 @@ header {
     width: 200px;
     height: 40px;
     /* border:1px solid var(--color-white); */
-    margin-right: 10px;
+    margin-right: var(--space-10);
     display: flex;
 }
 
@@ -54,7 +56,7 @@ header {
     margin:5px 0 5px 10px; 
     color: var(--color-white);
     font-family: var(--font);
-    font-size: 15px;
+    font-size: var(--space-15);
 }
 
 /* /header */
@@ -117,9 +119,9 @@ header {
     height: 50px;
     background-color: var(--color-gray-3);
     color: #4b646f;
-    font-size: 15px;
+    font-size: var(--font-size);
     padding-top: 12px;
-    padding-left: 10px;
+    padding-left: var(--space-10);
 }
 /* /menu */
 
@@ -170,7 +172,7 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 
 }
 #accordian :hover  .inicio .fa-home{
@@ -181,7 +183,7 @@ ul li {
 
  .compras_fa {
   /* border: 1px solid var(--color-white); */
-  width: 15px;
+  width: var(--space-15);
   margin-left: -15px;;
   position: relative;
   left: 162px;
@@ -191,7 +193,7 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 #accordian :hover  .compras .fa-truck{
   color:var(--color-white);
@@ -208,8 +210,8 @@ ul li {
   display: block;
   height: 50px;
   font-family: var(--font);
-  font-size: 15px;
-  padding: 10px;
+  font-size: var(--font-size);
+  padding: var(--space-10);
   text-decoration: none;
 
 }
@@ -218,13 +220,13 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 .fa-cash-register{
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 .compras_ul :hover .fa-shopping-cart {
   color: var(--color-white);
@@ -240,7 +242,7 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 #accordian :hover  .productos .fa-tasks{
   color:var(--color-white);
@@ -268,7 +270,7 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 #accordian :hover  .contactos .fa-tasks{
   color:var(--color-white);
@@ -284,13 +286,13 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 .fa-briefcase{
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 .compras_ul :hover .fa-users {
   color: var(--color-white);
@@ -309,13 +311,13 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 .fa-chart-line{
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 .compras_ul :hover .fa-chart-line {
   color: var(--color-white);
@@ -325,7 +327,7 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 
 /* facturacion */
@@ -337,7 +339,7 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 .facturacion_fa{
   /* border: 1px solid var(--color-white); */
@@ -366,13 +368,12 @@ ul li {
   width: 50px;
   text-align: center;
   color:var(--color-gray-icons); 
-  font-size: 15px;
+  font-size: var(--font-size);
 }
 .compras_ul :hover .fa-list-alt {
   color: var(--color-white);
   font-size: 17px;
 }
-
 
 
 /* contenedor de secciones */
@@ -382,7 +383,7 @@ ul li {
     border: 1px solid red;
     margin: 0 auto;
 }
-  
+
 
 
 /* /contenedor de secciones */

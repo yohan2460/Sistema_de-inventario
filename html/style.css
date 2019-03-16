@@ -1,0 +1,492 @@
+
+
+.carousel-indicators {
+  z-index: 1;
+}
+
+#menu {
+  text-align: center;
+  background-color: black;
+}
+
+#menu h4 {
+  list-style: none;
+  display: inline-block;
+  padding-left: 5px;
+  color: white;
+}
+.texto  a{ 
+  color: white;
+  text-decoration: none ;
+  font-size:20px; 
+}
+.texto{
+  font-size: 20px;
+}
+.texto a:hover{
+  color:white;
+  text-decoration: none ;
+}
+.texto a:link{
+  color: white;
+}
+.contacto a{
+  color: white;
+  text-decoration: none ;
+  font-size:20px; 
+}
+.contacto  a:hover{
+  color:white;
+  text-decoration: none ;
+}
+.registro-1 {
+  display: flex;
+  color: #f4f6f7;
+  margin: 5px;
+  display: flex;
+  bottom: 15px;
+  left: 323px;
+}
+
+.registro {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  margin: -2px;
+  /* border: 1px solid red; */
+}
+
+.login {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  /* border: 1px solid red; */
+  color: #fff;
+  background: #5e7de3;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0px 10px 0px 10px;
+}
+.login-1 {
+  padding: 0px 30px 0px 30px;
+}
+
+#logo {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+header img {
+  justify-content: center;
+}
+
+header {
+  background: -webkit-linear-gradient(left, #581845, #112bae, #9649e8);
+  height: 200px;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
+}
+
+.overlay.active {
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 500px;
+}
+
+.popup {
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+
+  transition: 0.3s ease all;
+  transform: scale(0.7);
+  opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  transition: 0.3s ease all;
+  color: #bbbbbb;
+}
+
+.popup .btn-cerrar-popup:hover {
+  color: #572364;
+}
+
+.popup h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0;
+}
+
+.popup h4 {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  opacity: 0;
+}
+
+.popup form .contenedor-inputs {
+  opacity: 0;
+}
+
+.popup form .contenedor-inputs input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 52px;
+  font-size: 18px;
+  line-height: 52px;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+
+.popup form .btn-submit {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: #fff;
+  background: #5e7de3;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.popup form .btn-submit:hover {
+  background: rgba(94, 125, 227, 0.9);
+}
+
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.popup.active h3 {
+  animation: entradaTitulo 0.8s ease 0.5s forwards;
+}
+.popup.active h4 {
+  animation: entradaSubtitulo 0.8s ease 0.5s forwards;
+}
+.popup.active .contenedor-inputs {
+  animation: entradaInputs 1s linear 1s forwards;
+}
+
+@keyframes entradaTitulo {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes entradaSubtitulo {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes entradaInputs {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* aca cominezan los estilos para la pagina de los productos */
+
+.container2 {
+  border: 2px solid black;
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container2 > div {
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  margin: 49px;
+  padding: none;
+  float: left;
+  border-radius: 5px;
+ border-radius: 15px;
+}
+.propiedad {
+  width: 398px;
+  height: 80px;
+  border: 1px solid #b3a8a8;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Rokkitt", serif;
+  color: #fff;
+  background: #000;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  
+}
+.imagen {
+  /* border: 1px solid red; */
+  width: 257px;
+  height: 212px;
+  margin: 10px;
+}
+
+.imagen img {
+  width: 255px;
+  height: 210px;
+}
+
+.descripcion {
+  /* border: 1px solid red; */
+  width: 124px;
+  height: 212px;
+  position: relative;
+  bottom: 222px;
+  left: 270px;
+  background: #f4f6f7;
+}
+
+.background {
+  background: #f4f6f7;
+  height: 317px;
+  position: relative;
+  top: 0px;
+  border: 1px solid #f4f6f7;
+  border-radius: 15px;
+}
+
+.descripcion p {
+  padding: 5px;
+  font-size: 12px;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  /* background:#F4F6F7; */
+}
+
+.descripcion p samp {
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  font-family: "Volkhov", serif;
+}
+
+.descripcion_texto {
+  background: black;
+  width: 124px;
+  height: 212px;
+  top: 142px;
+  bottom: 500px;
+}
+
+.prueba {
+  top: 16px;
+  position: relative;
+  right: 270px;
+  width: 395px;
+  height: 89px;
+}
+.P {
+  width: 100%;
+  height: 1px;
+}
+
+/* desde aca comineza el contenido de la pagina */
+
+.contenido{
+ height: 1920px;
+ width: 1300px;
+ margin: auto;
+ margin-bottom: 100px;
+ background: #bbbbbb28;
+ border-radius: 15px;
+}
+.maquina{
+  /* border: 2px solid rgba(240, 178, 9, 0.692) ; */
+  width:20%;
+  height:400px;
+  float: right;
+  margin: 3% 2.5% 3% 2.5%;
+  background: #bbbbbb48;
+  border-radius: 15px;
+}
+.maquina-nombre{
+  border:1px solid black;
+  height: 50px;
+  /* border-radius: 15px;  */
+  text-align: center;
+  text-transform: capitalize;
+  vertical-align: middle;
+  background:black;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.maquina-img{
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  height: 150px;
+  border-radius: 15px;
+  background: #bbbbbb79;
+}
+.maquina-img img{
+  width:100%;
+  height: 150px;
+  margin: auto;
+
+}
+.maquina-descripcion{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.maquina-descripcion  span {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Rokkitt", serif;
+  letter-spacing: 1px;  
+}
+.maquina-descripcion  p{
+  font-size: 13px;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 10px 20px 5px 5px;
+}
+
+/* desde aca se comienzan a dar estilos al footer
+*/
+
+footer {
+  background: rgba(0, 0, 0, 0.74);
+  width: 100%;
+  height: 300px;
+  bottom: 0%;
+  top: -1000px;
+}
+
+footer div > h4 a {
+  color: white;
+  text-align: center;
+  margin: 1px 0px 12px 0px;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+.hover:hover {
+  color: #572364;
+  text-decoration: none;
+}
+.contactanos {
+  height: 200px;
+  width: 25%;
+  float: right;
+  margin: 40px 37px 10px 37px;
+  padding: 10px;
+}
+
+.nosotros {
+  height: 250px;
+  position: relative;
+  bottom: 21px;
+  padding: 30px;
+}
+
+
+.redes-sociales a img {
+  width: 50px;
+  margin: 40px 30px 0px 0px;
+  /* border: 1px solid red; */
+  position: relative;
+  top: 17px;
+  right: 18px;
+}
+
+input {
+  border: 1px solid #9649e8;
+  border-radius: 8px;
+  border: none;
+}
+.contacto span{
+  color: white;
+}
+.atras img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 245px;
+  left: 56px;
+}
+.chat img{
+  width: 100px;
+  height: 100px;
+  position:fixed;
+  bottom: 18px;
+  right: 12px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
