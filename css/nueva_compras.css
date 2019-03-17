@@ -20,6 +20,7 @@
 body{
     background-color: var(--color-gray-body);
 }
+/* titulo */
 .title_compra{
     padding: 0px;
     height: 50px;
@@ -44,6 +45,9 @@ body{
      left: 12px;
      top: 6px;
 }
+/* /titulo */
+
+/* container de la gestion de compra */
 .container_compra{
     height: 400px;
     margin: var(--space-15);
@@ -51,6 +55,7 @@ body{
     border-top: 3px solid #d2d6de;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
+/* /container de la gestion de compra */
 .title_registro{
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     height: 50px;
@@ -83,11 +88,11 @@ body{
 }
 .datos_compra{
     height: 70px;
-      border: var(--border);
+      /* border: var(--border); */
   display: block;
   padding-left: 20px;
-  background-color: #00a65a;
-  display: flex;
+  /* background-color: #00a65a; */
+  
 }
 
 .buscar{
@@ -98,163 +103,157 @@ body{
     top: -15px; */
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    text-align: center;
+    /* text-align: center; */
+    float: left;
+    margin-left: 0px;
+    line-height: 15px;
+    border-left: none;
+}
+
+.buscar input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 359px;
+    height: 30px;
+    border: 1px solid #d2d6de;
+    position: relative;
+    top: -40px;
+    border-left: none;
+    line-height: 15px;
 }
 .datos_compra p{
     font-weight: bold;
 }
 .block{
     display: block;
-    background: red;
     height: 20px;
+    margin-bottom: 5px;
 }
-.nuevo{
-    /* position: absolute;
-    width: 60px;
-    top: 288px; */
+.boton_buscar{
+    border-right: none;
     right: 754px;
-    height: 30px;
+    height: 31px;
     border: 1px solid #d2d6de;
     background-color: #e7e7e7;
     font-family: var(--font);
     font-size: 12px;
     display: flex;
     align-items: center;
-    margin-left: 5px;
     cursor: pointer;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    float: left;
 }
 .fa-plus{
     margin: 0 5px 0 5px;
     cursor: pointer;
 }
 .calendario{
-    width: 359px;
+    width: 150px;
     height: 30px;
+    margin-left: 70px;
+    background-color: #e7e7e7;
     border: 1px solid #d2d6de;
+    float: left;
+}
+/* estilos de el popup */
+.overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.overlay.active{
+    visibility:visible; 
+}
+.popup{
+    background: #ffffff;
+    width: 600px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.4);
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
     
 }
-.popup {
-    background: #f8f8f8;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    font-family: "Montserrat", sans-serif;
-    padding: 20px;
-    text-align: center;
-    width: 600px;
-  
-    transition: 0.3s ease all;
-    transform: scale(0.7);
-    opacity: 0;
-  }
-  
-  .popup .btn-cerrar-popup {
-    font-size: 16px;
-    line-height: 16px;
-    display: block;
-    text-align: right;
-    transition: 0.3s ease all;
-    color: #bbbbbb;
-  }
-  
-  .popup .btn-cerrar-popup:hover {
-    color: #572364;
-  }
-  
-  .popup h3 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    opacity: 0;
-  }
-  
-  .popup h4 {
-    font-size: 26px;
-    font-weight: 300;
-    margin-bottom: 40px;
-    opacity: 0;
-  }
-  
-  .popup form .contenedor-inputs {
-    opacity: 0;
-  }
-  
-  .popup form .contenedor-inputs input {
-    width: 100%;
-    margin-bottom: 20px;
-    height: 52px;
-    font-size: 18px;
-    line-height: 52px;
-    text-align: center;
-    border: 1px solid #bbbbbb;
-  }
-  
-  .popup form .btn-submit {
-    padding: 0 20px;
+.popup_title{
+    display: flex;
+    justify-content: space-between;
+}
+.itemUno{
+    display: flex;
+    /* background-color: #00a65a; */
+    /* width: 500px; */
+    margin-left: 33px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+.item input{
+    width: 400px;
     height: 40px;
-    line-height: 40px;
+    margin-left: 10px;
+
+}
+.itemDos{
+    display: flex;
+    /* background-color: #00a65a; */
+    /* width: 500px; */
+    /* margin-left: 50px; */
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+.itemTres{
+    display: flex;
+    /* background-color: #00a65a; */
+    /* width: 500px; */
+    margin-left: 18px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+.itemCuatro{
+    display: flex;
+    /* background-color: #00a65a; */
+    /* width: 500px; */
+    margin-left: 27px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.submit_container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10px 0 10px ;
+}
+.submit{
+    background-color: #f4f4f4;
+    height: 50px;
+    width: 120px;
+    color: #444;
+    border-color: #ddd;
     border: none;
-    color: #fff;
-    background: #5e7de3;
-    border-radius: 3px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s ease all;
-  }
-  
-  .popup form .btn-submit:hover {
-    background: rgba(94, 125, 227, 0.9);
-  }
-  
-  /* ------------------------- */
-  /* ANIMACIONES */
-  /* ------------------------- */
-  .popup.active {
-    transform: scale(1);
-    opacity: 1;
-  }
-  .popup.active h3 {
-    animation: entradaTitulo 0.8s ease 0.5s forwards;
-  }
-  .popup.active h4 {
-    animation: entradaSubtitulo 0.8s ease 0.5s forwards;
-  }
-  .popup.active .contenedor-inputs {
-    animation: entradaInputs 1s linear 1s forwards;
-  }
-  
-  @keyframes entradaTitulo {
-    from {
-      opacity: 0;
-      transform: translateY(-25px);
-    }
-  
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes entradaSubtitulo {
-    from {
-      opacity: 0;
-      transform: translateY(25px);
-    }
-  
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes entradaInputs {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+    margin: 0 10px 0 10px ;
+}
+.submit.cancelar{
+    background-color:#367fa9;
+    color: var(--color-white);
+}

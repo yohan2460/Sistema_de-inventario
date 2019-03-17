@@ -1,4 +1,5 @@
 
+
 /*jQuery time*/
 $(document).ready(function(){
 	$("#accordian h3").click(function(){
@@ -10,4 +11,17 @@ $(document).ready(function(){
 			$(this).next().slideDown();
 		}
 	})
+})
+
+const $abrirPopup = document.getElementById('btn-abrir-popup');
+	  $cerrarPopup = document.getElementById('cerrar');
+	  $cancelar = document.getElementById('cancelar');
+$abrirPopup.addEventListener('click', function(){
+	overlay.classList.add('active');
+});
+$cerrarPopup.addEventListener('click', function(){
+    overlay.classList.remove('active');
+});
+$cancelar.addEventListener('click', function(){
+	overlay.classList.remove('active')
 })
